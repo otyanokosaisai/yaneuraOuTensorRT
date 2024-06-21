@@ -1,7 +1,7 @@
 # Shogi AI Docker Environment for GPU(TensorRT)
 
 ## 概要
-このプロジェクトは、Nvidiaの最近のGPUが搭載されたデバイスにDockerをインストールし、ShogiHome、YaneuraOu、FukauraOuの環境を簡単にセットアップするためのDockerfileを提供します。Dockerを使うことにより、ローカル環境を変更することなくGPU(TensorRT)を用いた将棋AIを利用することができます。また、Dockerを利用するため、再現性が高く、導入の苦労が少ないです。
+このプロジェクトは、Nvidiaの最近のGPUが搭載されたデバイスにDockerをインストールし、ShogiHome、YaneuraOu、FukauraOuの環境を簡単にセットアップするためのDockerfileを提供します。Dockerを使うことにより、ローカル環境を変更することなくGPU(TensorRT)を用いた将棋AIを利用することができます。また、Dockerを利用するため、再現性が高く、導入の苦労が少ないです。導入後のShogiHomeの使い方は[ShogiHome使い方](https://github.com/sunfish-shogi/electron-shogi/wiki/%E4%BD%BF%E3%81%84%E6%96%B9)を参照してください。
 
 ## 構成
 - ShogiHome
@@ -50,3 +50,9 @@
 エンジンについてはやねうら王(TensorRT), 標準NNUE, NNUE1024のみがビルドされるようになっており、必要であればDockerfileのビルド部に別のエンジンのビルドコマンドを追加して適宜使用してください。
 ## ライセンス
 このプロジェクトはApache License 2.0の下でライセンスされています。詳細は[LICENSE](LICENSE)ファイルを参照してください。
+また使用しているやねうら王とShogiHomeに関しては以下のライセンスが適用されます：
+- やねうら王のライセンス: [GPL-3.0 license](https://github.com/yaneurao/YaneuraOu/blob/master/LICENSE)
+- ShogiHomeのライセンス: [MIT License](https://github.com/username/ShogiHome/blob/master/LICENSE)
+
+## Issues
+バグや問題を見つけた場合は、[Issues](https://github.com/otyanokosaisai/yaneuraOuTensorRT/issues)で報告してください。
